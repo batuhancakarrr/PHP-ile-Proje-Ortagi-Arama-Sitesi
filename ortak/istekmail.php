@@ -35,8 +35,8 @@ $mail->Host = 'smtp.gmail.com';
 $mail->Port = 587;
 $mail->SMTPSecure = 'tls';
 $mail->SMTPAuth = true;
-$mail->Username = 'batuyhan19@gmail.com';
-$mail->Password = 'ouuwqiltkwqhaccl';
+$mail->Username = 'yourmail@mail.com';
+$mail->Password = '';
 
 $mail->setFrom('batuyhan19@gmail.com', 'Batuhan');
 $mail->addAddress($email, $isim);
