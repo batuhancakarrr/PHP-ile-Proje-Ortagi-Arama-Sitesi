@@ -1,32 +1,32 @@
 <?php include('server.php');
-if(isset($_SESSION["k_adi"])){
-	$kadi=$_SESSION["k_adi"];
-	if ($_SESSION["kullanici_tip"]==1) {
+if (isset($_SESSION["k_adi"])) {
+	$kadi = $_SESSION["k_adi"];
+	if ($_SESSION["kullanici_tip"] == 1) {
 		header("location: ortakBekleyenPrfl.php");
-	}
-	else{
+	} else {
 		header("location: ortakArayanPrfl.php");
 	}
+} else {
+	$kadi = "";
 }
-else{
-    $kadi="";
-}
- ?>
+?>
 
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>OrtakAraBul</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	
+
 </head>
+
 <body>
 
-<!--Navbar-->
-<?php
-include_once("navbar3.php");
-?>
-<!--Navbar-->
+	<!--Navbar-->
+	<?php
+	include_once("navbar3.php");
+	?>
+	<!--Navbar-->
 
 	<div class="container">
 		<div class="jumbotron text-center">
@@ -104,6 +104,7 @@ include_once("navbar3.php");
 	</div>
 
 </body>
+
 </html>
 
 
@@ -114,29 +115,34 @@ include("footer.php");
 <!--Footer-->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script></body>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
 </html>
 
 <style>
-		.carousel-caption {
-			background: rgba(0, 0, 0, 0.7);
-			padding: 10px;
-			bottom: 30px;
-		}
+	.carousel-caption {
+		background: rgba(0, 0, 0, 0.7);
+		padding: 10px;
+		bottom: 30px;
+	}
 
-		.header {
-			color: wheat;
-			margin-top: 30px;
-			padding: 20px;
-			background: gray
-		}
+	.header {
+		color: wheat;
+		margin-top: 30px;
+		padding: 20px;
+		background: gray
+	}
 
-		.card {
-			background: #fff;
-			border-radius: 5px;
-		}
-		.jumbotron {
-		background-color: wheat; /* Jumbotron arkaplan rengi */
-		color: gray; /* Jumbotron metin rengi */
-		}
-	</style>
+	.card {
+		background: #fff;
+		border-radius: 5px;
+	}
+
+	.jumbotron {
+		background-color: wheat;
+		/* Jumbotron arkaplan rengi */
+		color: gray;
+		/* Jumbotron metin rengi */
+	}
+</style>
