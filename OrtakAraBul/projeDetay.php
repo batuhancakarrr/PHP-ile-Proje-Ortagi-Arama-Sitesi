@@ -312,14 +312,6 @@ if ($sonuc->num_rows > 0) {
 							$soru_id = $_POST["soru_id"];
 							$query = "UPDATE soru_cevap SET cevap='$cevap' WHERE id='$soru_id' AND proje_id='$proje_id'";
 							$result = mysqli_query($baglanti, $query);
-
-							if ($result) {
-								// Başarılı bir şekilde cevap eklendi
-								// İstediğiniz yönlendirme veya mesajları burada yapabilirsiniz
-							} else {
-								// Cevap eklenirken hata oluştu
-								// Hata mesajını burada gösterebilir veya işlem yapabilirsiniz
-							}
 						}
 					}
 
@@ -372,9 +364,6 @@ if ($sonuc->num_rows > 0) {
 				</div>
 			</div>
 			<!-- Soru-Cevap Bölümü -->
-
-			<!-- Diğer kodlar devam eder... -->
-
 
 		</div>
 	</div>
